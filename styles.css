@@ -148,3 +148,22 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+.drive-btn {
+    background-color: #4285F4;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.drive-btn:hover {
+    background-color: #3367D6;
+}
+
+.fa-google-drive {
+    font-size: 1.1em;
+}
+
+.project-icon.fa-cloud {
+    color: #34A853; /* Google Drive green */
+}
