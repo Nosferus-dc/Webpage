@@ -1,33 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Python Projects</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Projects Portfolio | Darrick Chua</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>My Python Projects Portfolio</h1>
+    <header class="hero">
+        <div class="container">
+            <h1>Python Projects Portfolio</h1>
+            <p class="subtitle">Data Analysis & Machine Learning Projects</p>
+        </div>
     </header>
     
-    <section class="projects">
-        <div class="project-card">
-            <h2>Capstone Project: UFO Sightings in US</h2>
-            <p>Analysed 60K+ UFO sightings in US using Python, identifying hotspots and trends. Built Power BI dashboards to visualize patterns, revealing a sharp increase in documented reports since 1994. Findings suggest correlation with growing media interest and drone adoption.</p>
-            <a href="Webpage/Capstone Project/Capstone Project_DC.ipynb" download>Download Python Code</a>
-            <a href="Webpage/Capstone Project/Capstone Final Presentation_DC.pdf" download>Download Presentation Slides</a>
-        </div>
-        
-        <div class="project-card">
-            <h2>Data Sprint Project: HDB Resale Price Prediction</h2>
-            <p>Data sprint group project where we analysed 10+ years of HDB resale data using Python, built a predictive Random Forest model, and deployed a Streamlit app for price estimation based on numerous key features.</p>
-            <a href="Webpage/Data Sprint Project/HDB_Resale_Group1.ipynb" download>Download Python Code</a>
-            <a href="Webpage/Data Sprint Project/Project 3_Data Sprint_HDB Resale Price_Presentation.pptx" download>Download Presentation Slides</a>
-        </div>
-    </section>
+    <main class="container">
+        <section class="projects">
+            <div class="project-card">
+                <div class="project-header">
+                    <i class="fas fa-robot project-icon"></i>
+                    <h2>Capstone Project: UFO Sightings in US</h2>
+                </div>
+                <div class="project-content">
+                    <p>Analysed 60K+ UFO sightings in US using Python, identifying hotspots and trends. Built Power BI dashboards to visualize patterns, revealing a sharp increase in documented reports since 1994. Findings suggest correlation with growing media interest and drone adoption.</p>
+                    <div class="project-links">
+                        <a href="Webpage/Capstone Project/Capstone Project_DC.ipynb" download class="btn">
+                            <i class="fas fa-download"></i> Python Code
+                        </a>
+                        <a href="Webpage/Capstone Project/Capstone Final Presentation_DC.pdf" download class="btn">
+                            <i class="fas fa-file-pdf"></i> Presentation Slides
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-header">
+                    <i class="fas fa-chart-line project-icon"></i>
+                    <h2>Data Sprint Project: HDB Resale Price Prediction</h2>
+                </div>
+                <div class="project-content">
+                    <p>Data sprint group project where we analysed 10+ years of HDB resale data using Python, built a predictive Random Forest model, and deployed a Streamlit app for price estimation based on numerous key features.</p>
+                    <div class="project-links">
+                        <a href="Webpage/Data Sprint Project/HDB_Resale_Group1.ipynb" download class="btn">
+                            <i class="fas fa-download"></i> Python Code
+                        </a>
+                        <a href="Webpage/Data Sprint Project/Project 3_Data Sprint_HDB Resale Price_Presentation.pptx" download class="btn">
+                            <i class="fas fa-file-powerpoint"></i> Presentation Slides
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     
-    <footer>
-        <p>Contact information</p>
-        <p>Email: darrick.chuajx@gmail.com</p>
+    <footer class="footer">
+        <div class="container">
+            <h3>Contact Me</h3>
+            <div class="contact-info">
+                <a href="mailto:darrick.chuajx@gmail.com" class="contact-link">
+                    <i class="fas fa-envelope"></i> darrick.chuajx@gmail.com
+                </a>
+            </div>
+            <div class="copyright">
+                &copy; <span id="year"></span> Darrick Chua. All rights reserved.
+            </div>
+        </div>
     </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
